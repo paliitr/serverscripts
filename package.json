@@ -1,0 +1,22 @@
+{
+  "name": "phantomjscrawler",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scrape using phantomjs",
+  "author": "Bipin Nag <bipin@recruitergrid.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "amqplib": "^0.4.2",
+    "case": "^1.4.1",
+    "cassandra-driver": "^3.1.5",
+    "glob": "^7.1.1",
+    "http-proxy": "^1.15.2",
+    "ip": "^1.1.3",
+    "pg-promise": "^5.3.5",
+    "phantomjs-prebuilt": "^2.1.13",
+    "request": "^2.75.0",
+    "url-pattern": "^1.0.2",
+    "uuid": "^2.0.3",
+    "winston": "^2.2.0"
+  }
+}
