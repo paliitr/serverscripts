@@ -39,10 +39,13 @@ var proxy = httpProxy.createProxyServer({});
 //
 proxy.on('proxyReq', function(proxyReq, req, res, options) {
   // set the custom header for the request
-  // for(var key in br_header){
-  //   proxyReq.setHeader(key, br_header[key]);
-  // }
-  proxyReq.setHeader('user-agent', br_header['user-agent']);
+  var count = 0;
+  for(var key in br_header){
+    if(count==1) break;
+    proxyReq.setHeader(key, br_header[key]);
+    count++;
+  }
+  // proxyReq.setHeader('user-agent', br_header['user-agent']);
   console.log('Request')
   console.log(JSON.stringify(req.headers, null, 4));
 });
